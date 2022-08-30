@@ -5,4 +5,11 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // our Original Stle
-@import "./components/header";
+@import "./components/header.scss";
+
+@import "./components/main.scss";
+
+/* required parts */
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
