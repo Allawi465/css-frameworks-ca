@@ -1,3 +1,8 @@
+.logo-name {
+    font-weight: 400;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
 .form-search {
     margin-top: 4px;
 }
@@ -15,7 +20,7 @@
 }
 
 .icon-menu {
-    color: rgb(0, 0, 0);
+    color: $black;
 }
 
 .left-bar-nav {
