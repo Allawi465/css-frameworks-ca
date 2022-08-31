@@ -10850,7 +10850,6 @@ textarea.form-control-lg {
 
 .live-list {
   text-align: center;
-  position: fixed;
   left: 20%;
 }
 
@@ -10908,6 +10907,36 @@ html, body {
     font-size: 18px;
   }
 }
+.profil-page-images {
+  width: 100px;
+  height: 100px;
+}
+
+.profil-info {
+  margin: auto;
+  max-width: 300px;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+strong {
+  color: #fff;
+}
+
+.profil-info-bio {
+  color: #fff;
+  max-width: 300px;
+  margin: auto;
+  padding: 10px;
+}
+
+.profil-page-details {
+  color: #fff;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: auto;
+}
+
 /* required parts */
 :root {
   --bs-blue: #44aaff;

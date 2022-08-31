@@ -9,7 +9,9 @@
 
 @import "./components/main.scss";
 
-@import "../scss/components/form/formsigin.scss";
+@import "../scss/components/sign-in-page/formsigin.scss";
+
+@import "../scss/components/profil-page/profil.scss";
 
 /* required parts */
 @import "../../node_modules/bootstrap/scss/root";
