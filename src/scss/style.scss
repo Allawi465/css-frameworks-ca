@@ -1,13 +1,19 @@
-$blue: red;
+// Bootstrap variables overrides
+@import "variables.scss";
 
-.test {
-    display: block;
+// Bootstrap style 
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-    &-buttom {
-        background-color: aqua;
-    }
-}
+// our Original Stle
+@import "./components/header.scss";
 
-h1 {
-   color: red;
-}
+@import "./components/main.scss";
+
+@import "../scss/components/sign-in-page/formsigin.scss";
+
+@import "../scss/components/profil-page/profil.scss";
+
+/* required parts */
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";

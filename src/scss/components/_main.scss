@@ -1,0 +1,79 @@
+.main-container {
+  margin-top: 5.5rem !important;
+}
+
+.story-images {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  border-width: 4px !important;
+}
+    
+.post-images {
+  width: 46px;
+  height: 46px;
+  position: relative;
+}
+
+.create-new-post {
+  font-size: 19px;
+}
+
+.posted-time {
+  margin-top: 11px;
+}
+
+.btn {
+  border: none !important;
+}
+
+.btnpublish {
+  text-decoration: none;
+  color: $blue;
+}
+
+.btnpublish:hover {
+  color: $blue;
+}
+
+.live-feed-list {
+  overflow-y: auto;
+}
+
+.live-list {
+  text-align: center;
+}
+
+@include media-breakpoint-between(xs, md) { 
+    .main-content {
+      width: 100%;
+    }
+  
+    .live-feed-list {
+      width: 100%;
+    }
+  
+    .feed-post {
+      width: 100%;
+    }
+  
+    .live-profil {
+      border: unset;
+    }
+  
+    .live-list {
+      flex-direction: row;
+      position: unset;
+    }
+}
+
+@include media-breakpoint-between(xs, sm) { 
+    .comment-post {
+      font-size: 12px;
+      width: fit-content;
+      line-height: 25px;
+    }
+    .likes-comment {
+      font-size: 12px;
+    }
+}

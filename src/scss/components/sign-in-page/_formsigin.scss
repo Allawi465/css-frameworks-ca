@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.body-for-login {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    background-color: $gray-100;
+}
+
+.h1-login-page {
+    font-weight: 400;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+@include media-breakpoint-between(xs, sm) { 
+    .sign-in-h2 {
+        font-size: 18px;
+    }
+}

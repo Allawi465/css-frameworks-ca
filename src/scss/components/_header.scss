@@ -1,0 +1,38 @@
+.logo-name {
+    font-weight: 400;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+.form-search {
+    margin-top: 4px;
+}
+
+.profil-images {
+    width: 24px;
+    height: 24px;
+    position: relative;
+
+    &-toppbar {
+        transform: scale(2.1);
+        width: 100%; 
+        position: absolute;
+    }
+}
+
+.icon-menu {
+    color: $black;
+}
+
+.left-bar-nav {
+    margin-top: 8px;
+}
+
+@include media-breakpoint-between(xs, md) { 
+    .header-nav-bar {
+      width: 100%;
+    }
+  
+    .form-search {
+      max-width: 40%;
+    }
+  }
