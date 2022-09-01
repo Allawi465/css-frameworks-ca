@@ -23,10 +23,6 @@
   margin-top: 11px;
 }
 
-.btn {
-  border: none !important;
-}
-
 .btnpublish {
   text-decoration: none;
   color: $blue;
@@ -36,44 +32,13 @@
   color: $blue;
 }
 
-.live-feed-list {
-  overflow-y: auto;
-}
-
-.live-list {
-  text-align: center;
-}
-
-@include media-breakpoint-between(xs, md) { 
-    .main-content {
-      width: 100%;
-    }
-  
-    .live-feed-list {
-      width: 100%;
-    }
-  
-    .feed-post {
-      width: 100%;
-    }
-  
-    .live-profil {
-      border: unset;
-    }
-  
-    .live-list {
-      flex-direction: row;
-      position: unset;
-    }
-}
-
 @include media-breakpoint-between(xs, sm) { 
-    .comment-post {
-      font-size: 12px;
-      width: fit-content;
-      line-height: 25px;
-    }
-    .likes-comment {
-      font-size: 12px;
-    }
+  .comment-post {
+    font-size: 12px;
+    width: fit-content;
+    line-height: 25px;
+  }
+  .likes-comment {
+    font-size: 12px;
+  }
 }

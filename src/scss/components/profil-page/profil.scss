@@ -1,3 +1,8 @@
+.profil-page-card {
+    max-width: 860px;
+    margin: auto;
+}
+
 .profil-page-images {
     width: 100px;
     height: 100px;
@@ -28,6 +33,38 @@ strong {
     margin: auto;
 }
 
-.profil-page-card {
-   
+.live-feed-list {
+    overflow-y: auto;
+}
+  
+.live-list {
+    text-align: center;
+}
+
+.btn {
+    border: none !important;
+}
+
+@include media-breakpoint-between(xs, md) { 
+
+    .main-content {
+        width: 100%;
+    }
+  
+    .live-feed-list {
+      width: 100%;
+    }
+  
+    .feed-post {
+      width: 100%;
+    }
+  
+    .live-profil {
+      border: unset;
+    }
+  
+    .live-list {
+      flex-direction: row;
+      position: unset;
+    }
 }
