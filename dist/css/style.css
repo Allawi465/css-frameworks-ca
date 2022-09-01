@@ -10827,10 +10827,6 @@ textarea.form-control-lg {
   margin-top: 11px;
 }
 
-.live-messenger {
-  margin-bottom: 10px;
-}
-
 .btn {
   border: none !important;
 }
@@ -10850,7 +10846,6 @@ textarea.form-control-lg {
 
 .live-list {
   text-align: center;
-  left: 20%;
 }
 
 @media (max-width: 799.98px) {
@@ -10925,9 +10920,9 @@ strong {
 
 .profil-info-bio {
   color: #fff;
-  max-width: 300px;
+  max-width: 600px;
   margin: auto;
-  padding: 10px;
+  padding-top: 10px;
 }
 
 .profil-page-details {

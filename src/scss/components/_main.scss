@@ -23,10 +23,6 @@
   margin-top: 11px;
 }
 
-.live-messenger {
-  margin-bottom: 10px;
-}
-
 .btn {
   border: none !important;
 }
@@ -46,7 +42,6 @@
 
 .live-list {
   text-align: center;
-  left: 20%;
 }
 
 @include media-breakpoint-between(xs, md) { 
@@ -82,4 +77,3 @@
       font-size: 12px;
     }
 }
-

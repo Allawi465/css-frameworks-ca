@@ -16,9 +16,9 @@ strong {
 
 .profil-info-bio {
     color: $white;
-    max-width: 300px;
+    max-width: 600px;
     margin: auto;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .profil-page-details {
@@ -26,4 +26,8 @@ strong {
     flex-wrap: wrap;
     max-width: 600px;
     margin: auto;
+}
+
+.profil-page-card {
+   
 }
