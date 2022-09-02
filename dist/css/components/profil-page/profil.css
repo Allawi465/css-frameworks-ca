@@ -1,17 +1,75 @@
-/* Error: Undefined variable.
- *    ,
- * 14 |     color: $white;
- *    |            ^^^^^^
- *    '
- *   src\scss\components\profil-page\profil.scss 14:12  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 14 \2502      color: $white;\d\a    \2502             ^^^^^^\a    \2575 \a   src\\scss\\components\\profil-page\\profil.scss 14:12  root stylesheet";
+/*  color-variables */
+/*  color-variables */
+/* container breakpoints */
+/* grid breakpoints */
+/*  aspect ratio */
+/* display heading */
+/* dropdown-variables  */
+/* List group */
+.profil-page-card {
+  max-width: 860px;
+  margin: auto;
 }
+
+.profil-page-images {
+  width: 100px;
+  height: 100px;
+}
+
+.profil-info {
+  margin: auto;
+  max-width: 300px;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+strong {
+  color: #fff;
+}
+
+.profil-info-bio {
+  color: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.profil-page-details {
+  color: #fff;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: auto;
+}
+
+.live-feed-list {
+  overflow-y: auto;
+}
+
+.live-list {
+  text-align: center;
+}
+
+.btn {
+  border: none !important;
+}
+
+@media (max-width: 799.98px) {
+  .main-content {
+    width: 100%;
+  }
+  .live-feed-list {
+    width: 100%;
+  }
+  .feed-post {
+    width: 100%;
+  }
+  .live-profil {
+    border: unset;
+  }
+  .live-list {
+    flex-direction: row;
+    position: unset;
+  }
+}
+
+/*# sourceMappingURL=profil.css.map */
