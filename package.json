@@ -14,7 +14,7 @@
     "bootstrap",
     "sass"
   ],
-  "author": "Mohamed Allawi",
+  "author": "Mohammed Allawi <allawi465@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.2",
