@@ -53,15 +53,16 @@ strong {
   border: none !important;
 }
 
-@media (max-width: 799.98px) {
+@media (max-width: 991.98px) {
   .main-content {
     width: 100%;
   }
   .live-feed-list {
     width: 100%;
   }
-  .feed-post {
-    width: 100%;
+  .feed-post-profil {
+    width: 90%;
+    margin: auto;
   }
   .live-profil {
     border: unset;

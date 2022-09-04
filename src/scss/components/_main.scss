@@ -32,6 +32,10 @@
   color: $blue;
 }
 
+.feed-post {
+  margin: auto !important;
+}
+
 @include media-breakpoint-between(xs, sm) { 
   .comment-post {
     font-size: 12px;
