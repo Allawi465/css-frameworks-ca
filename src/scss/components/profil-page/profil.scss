@@ -1,3 +1,6 @@
+@import "../../variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+
 .profil-page-card {
     max-width: 860px;
     margin: auto;
@@ -45,7 +48,7 @@ strong {
     border: none !important;
 }
 
-@include media-breakpoint-between(xs, md) { 
+@include media-breakpoint-between(xs, lg) { 
 
     .main-content {
         width: 100%;
@@ -55,8 +58,9 @@ strong {
       width: 100%;
     }
   
-    .feed-post {
-      width: 100%;
+    .feed-post-profil {
+      width: 90%;
+      margin: auto;
     }
   
     .live-profil {

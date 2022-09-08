@@ -14,14 +14,13 @@
     "bootstrap",
     "sass"
   ],
-  "author": "Mohamed Allawi",
+  "author": "Mohammed Allawi <allawi465@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.2",
     "sass": "^1.54.5"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0",
-    "watch": "^1.0.2"
+    "bootstrap": "^5.2.0"
   }
 }

@@ -1,19 +1,14 @@
 // Bootstrap variables overrides
-@import "variables.scss";
+@import "variables";
 
 // Bootstrap style 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // our Original Stle
-@import "./components/header.scss";
+@import "./components/header";
 
-@import "./components/main.scss";
+@import "./components/main";
 
-@import "../scss/components/sign-in-page/formsigin.scss";
+@import "../scss/components/sign-in-page/formsigin";
 
-@import "../scss/components/profil-page/profil.scss";
-
-/* required parts */
-@import "../../node_modules/bootstrap/scss/root.scss";
-@import "../../node_modules/bootstrap/scss/maps.scss";
-@import "../../node_modules/bootstrap/scss/mixins.scss";
+@import "../scss/components/profil-page/profil";
