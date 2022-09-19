@@ -28,19 +28,22 @@ class register {
                     },
                 })
 
-                .then((response) => response.json())
+                .then((response) => {
+                    if (response.status >= 400) {
+                        throw error;
+                    }
+                    return response.json;
+                })
                 .then((data) => {
-                    if (data.statusCode === 400) {
-                        message.innerHTML = "Profile already exists"
-                    } else {
+                    if (data.statusCode !== 201) {
                         message.innerHTML = "Sign in"
                         localStorage.setItem("auth", JSON.stringify(data))
-                        this.registerSubmit()
+                        this.registerSubmit();
                         window.location = "login.html"; 
                     }
                 })
                 .catch((error) => {
-                    console.error('Error:', error);
+                    message.innerHTML = "Profile already exist"
                 })
             }
         })
@@ -49,25 +52,3 @@ class register {
 }
 
 const registerValidation = new register(form); 
-
-/* const url = "https://nf-api.onrender.com/api/v1/social/auth/login";
-
-const data = JSON.stringify({
-  email: "MohAll71237@stud.noroff.no",
-  password: "Besterbest123",
-});
-
-const options = {
-  method: "post",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: data,
-};
-
-async function registerProfile() {
-  const register = await fetch(url, options);
-  console.log(register);
-}
-
-registerProfile();  */

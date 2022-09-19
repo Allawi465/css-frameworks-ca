@@ -29,17 +29,22 @@ class user {
                     },
                 })
 
-                .then((response) => response.json())
+                .then((response) => {
+                    if (response.status === 401) {
+                        throw error;
+                    } 
+                    return response.json
+                })
                 .then((data) => {
-                    if (data.statusCode === 401) {
-                        message.innerHTML = "Invalid email or password"
-                    } else {
+                    if (data.status !== 200) {
+                        message.innerHTML = "logging in"
                         localStorage.setItem("user", JSON.stringify(data))
                         this.signInSubmit()
+                        window.location = "profile.html"; 
                     }
                 })
                 .catch((error) => {
-                    console.log(error)
+                    message.innerHTML = "Invalid email or password"
                 })
             }
         }) 
