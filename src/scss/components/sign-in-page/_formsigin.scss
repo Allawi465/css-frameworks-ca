@@ -3,6 +3,12 @@
     padding: 15px;
 }
 
+.create-account-heading  {
+    font-size: 20px;
+    font-weight: bold;
+    color: $black;
+}
+
 .body-for-login {
     display: flex;
     align-items: center;
@@ -16,8 +22,25 @@
     font-family: 'Qwitcher Grypen', cursive;
 }
 
+.sign-up-btn {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#errorMessager {
+    display: none;
+    font-size: 14px;
+    color: $red;
+}
+
+.sign-in-h2 {
+    font-size: 18px;
+}
+
 @include media-breakpoint-between(xs, sm) { 
-    .sign-in-h2 {
-        font-size: 18px;
+    
+    .create-account-heading {
+        font-size: 15px;
+        font-weight: bold;
     }
 }
