@@ -32,7 +32,6 @@ export function formValidation() {
     } 
 };
 
-
 export function lengthForm(value, theLen) {
     if(value.trim().length >= theLen) {
         return true;

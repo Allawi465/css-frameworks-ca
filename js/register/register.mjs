@@ -32,23 +32,24 @@ class register {
                     if (response.status >= 400) {
                         throw error;
                     }
-                    return response.json;
+                    return response.json();
                 })
+
                 .then((data) => {
-                    if (data.statusCode !== 201) {
-                        message.innerHTML = "Sign in"
-                        localStorage.setItem("auth", JSON.stringify(data))
+                    if (data.status !== 201) {
+                        message.innerHTML = "Sign in";
                         this.registerSubmit();
+                        this.form.reset();
                         window.location = "login.html"; 
                     }
                 })
+                
                 .catch((error) => {
-                    message.innerHTML = "Profile already exist"
+                    message.innerHTML = "Profile already exist";
                 })
             }
         })
-        
     }   
-}
+};
 
 const registerValidation = new register(form); 

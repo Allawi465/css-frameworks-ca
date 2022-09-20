@@ -30,16 +30,19 @@ class user {
                 })
 
                 .then((response) => {
-                    if (response.status === 401) {
+                    if (response.status >= 401) {
                         throw error;
                     } 
-                    return response.json
+
+                    return response.json();
                 })
                 .then((data) => {
                     if (data.status !== 200) {
-                        message.innerHTML = "logging in"
-                        localStorage.setItem("user", JSON.stringify(data))
-                        this.signInSubmit()
+                        message.innerHTML = "logging in";
+                        localStorage.setItem("user", JSON.stringify(data));
+                        localStorage.setItem("auth", 1);
+                        this.signInSubmit();
+                        this.form.reset();
                         window.location = "profile.html"; 
                     }
                 })
