@@ -59,6 +59,8 @@ strong {
   }
   .live-feed-list {
     width: 100%;
+    display: flex;
+    flex-direction: row;
   }
   .feed-post-profil {
     width: 90%;

@@ -10823,7 +10823,7 @@ textarea.form-control-lg {
   font-size: 19px;
 }
 
-.posted-time {
+.posted-option {
   margin-top: 11px;
 }
 
@@ -10956,6 +10956,8 @@ strong {
   }
   .live-feed-list {
     width: 100%;
+    display: flex;
+    flex-direction: row;
   }
   .feed-post-profil {
     width: 90%;
