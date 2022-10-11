@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Posts | NewDay</title>
+    <title> Profiles | NewDay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="/dist/css/style.css">
 </head>
 
-<body class="p-0 m-0 border-0">
+<body>
+
     <header>
         <nav class="navbar .navbar-expand-sm bg-light fixed-top">
             <div class="container">
@@ -35,17 +36,16 @@
                                     <a href="#"
                                         class="d-flex align-items-center justify-content-center link-dark text-decoration-none dropdown-toggle profil-nav"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="" alt="" width="28" height="28"
-                                            class="rounded-circle navbarImages">
+                                        <img src="" alt="" width="28" height="28" class="rounded-circle navbarImages">
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start dropdown-nav"
-                                    data-bs-display="static">
-                                    <li><a class="dropdown-item active" href="/profile/posts/">Posts</a></li>
-                                    <li><a class="dropdown-item" href="/profile/mypage/">Profile</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item sign_out" href="/profile/login/">Sign out</a></li>
+                                        data-bs-display="static">
+                                        <li><a class="dropdown-item" href="/profile/mypage/">Profile</a></li>
+                                        <li><a class="dropdown-item" href="/profile/posts/">Posts</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item sign_out" href="/profile/login/">Sign out</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -56,27 +56,10 @@
         </nav>
     </header>
     <main>
-        <div class="container-fluid main-container mt-4">
-            <div class="container d-flex">
-                <div class="feed-post">
-                    <div class="d-flex create-post">
-                        <form class="row" id="createPost">
-                            <div class="d-flex justify-content-left">
-                                <h3 class="create-new-post">Create new post</h3>
-                            </div>
-                            <div>
-                                <input class="form-control form-control-sm mb-2" type="url" name="media" placeholder="Image Url"
-                                    aria-label=".form-control-sm example" required>
-                                <input class="form-control form-control-sm mb-2" type="text" name="title"
-                                    placeholder="Your title here..." aria-label=".form-control-sm example" required>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" name="body" rows="2"></textarea>
-                            </div>
-                            <div class="d-grid gap-2 mt-1">
-                                <button class="btn btn-primary" type="submit">Create</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="d-flex flex-column mt-2 mb-4" id="post-lists">
+        <div class="container-fluid" style="margin-top: 100px;">
+            <div class="container d-flex justify-content-center">
+                <div class="col-9 main-content ">
+                    <div class="col-8 feed-post-profil" style="margin: auto;">
                         
                     </div>
                 </div>
