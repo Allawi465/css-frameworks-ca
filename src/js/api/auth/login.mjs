@@ -25,14 +25,11 @@ export async function login(profile) {
         const { accessToken, ...data } = await response.json();
 
         if(data.status !== 201) {
-            localStorage.saveToStorage("auth", 1);
             localStorage.saveToStorage("token", accessToken);
             localStorage.saveToStorage("user", data);
+            location.replace("/profile/mypage")
         }
-
-        console.log(data);
-    }
-    catch(error) {
+    } catch(error) {
         message.innerHTML = "Invalid email or password  ";
     }
 };

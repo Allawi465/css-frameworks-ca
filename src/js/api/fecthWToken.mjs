@@ -8,7 +8,7 @@ export function headers() {
     }
 };
 
-export async function fetchWToken(url, options) {
+export async function fetchWToken(url, options = {}) {
     return fetch(url, {
         ...options,
         headers: headers()

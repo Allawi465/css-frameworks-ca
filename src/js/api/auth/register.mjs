@@ -13,21 +13,18 @@ export async function register(user) {
             },
             method,
             body
-        })
+        });
 
         if(response.status >= 400) {
-            throw error
-        }
+            throw error;
+        };
     
-        const data = await response.json()
+        const data = await response.json();
 
         if(data.status !== 201) {
             message.innerHTML = "Sign in";
-        }
-
-        console.log(data)
-    }
-    catch(error) {
+        };
+    } catch(error) {
         message.innerHTML = "Profile already exists";
     }
 };

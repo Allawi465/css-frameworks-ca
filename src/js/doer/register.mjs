@@ -12,8 +12,7 @@ export function registerNewUsers() {
             }
             const formData = new FormData(form);
             const user = Object.fromEntries(formData.entries())
-            console.log(user)
-            register(user)
+            register(user);
         })
     }
 };

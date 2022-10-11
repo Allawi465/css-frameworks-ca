@@ -9,11 +9,7 @@ export function loginNewUsers() {
             const form = event.target;
             const formData = new FormData(form);
             const profile = Object.fromEntries(formData.entries())
-            console.log(profile)
-            login(profile)
+            login(profile);
         })
     }
 };
-
-/* const signUpBtn = document.querySelector(".sign-up-btn");
-signUpBtn.addEventListener("click", () => location.pathname = ("profile/register")); */
