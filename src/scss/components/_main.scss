@@ -36,6 +36,11 @@
   margin: auto !important;
 }
 
+.card-text {
+  max-width: 450px;
+  overflow: hidden;
+}
+
 @include media-breakpoint-between(xs, sm) { 
   .comment-post {
     font-size: 12px;
@@ -46,3 +51,9 @@
     font-size: 12px;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .card-text {
+    max-width: 200px;
+  }
+} 

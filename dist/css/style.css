@@ -10840,6 +10840,11 @@ textarea.form-control-lg {
   margin: auto !important;
 }
 
+.card-text {
+  max-width: 450px;
+  overflow: hidden;
+}
+
 @media (max-width: 575.98px) {
   .comment-post {
     font-size: 12px;
@@ -10848,6 +10853,11 @@ textarea.form-control-lg {
   }
   .likes-comment {
     font-size: 12px;
+  }
+}
+@media (max-width: 575.98px) {
+  .card-text {
+    max-width: 200px;
   }
 }
 .form-signin {
@@ -10921,6 +10931,10 @@ textarea.form-control-lg {
 }
 
 strong {
+  color: #fff;
+}
+
+.addPost {
   color: #fff;
 }
 
