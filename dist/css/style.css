@@ -10802,8 +10802,12 @@ textarea.form-control-lg {
     max-width: 40%;
   }
 }
-.main-container {
-  margin-top: 5.5rem !important;
+#profilesFromSearch {
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .story-images {
@@ -10858,6 +10862,9 @@ textarea.form-control-lg {
 @media (max-width: 575.98px) {
   .card-text {
     max-width: 200px;
+  }
+  #profilesFromSearch {
+    margin: auto;
   }
 }
 .form-signin {
