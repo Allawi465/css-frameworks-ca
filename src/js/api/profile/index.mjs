@@ -3,6 +3,11 @@ import {API_SOCIAL_URL } from "../endpoint/index.mjs";
 import { loadTheValue } from "../../localStorage/index.mjs";
 import { message } from "../profiles/index.mjs";
 
+/**
+ * Get profile by name with api get method  
+ * @param {get} get posts content 
+ * @param {fetchWToken} token from a function
+*/
 
 export async function getProfile(profile) {
    try {
@@ -20,6 +25,11 @@ export async function getProfile(profile) {
     }
 };
 
+/**
+ * Get profiles with api get method  
+ * @param {get} get profiles with limit 1000 for search function
+ * @param {fetchWToken} token from a function
+*/
 
 export async function getAllProfiles(profiles) {
     try {

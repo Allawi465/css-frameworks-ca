@@ -4,6 +4,12 @@ import { message } from "../profiles/index.mjs";
 const path = "/posts/";
 const method = "DELETE";
 
+/**
+ * deleting content with api DELETE method 
+ * @param {create} DELETE content api by id
+ *  @param {fetchWToken} token from a function
+*/
+
 export async function deleting(id) {
    try {
         const deletingPostUrl = `${API_SOCIAL_URL}${path}${id}`;

@@ -7,6 +7,12 @@ const name = parameters.get("name");
 
 export const message = document.getElementById("errorMessage");
 
+/**
+ * Get profile by name with api get method  
+ * @param {get} get profiles by name
+ * @param {fetchWToken} token from a function
+*/
+
 export async function getProfiles(profiles) {
  try {
     const path = `/profiles/${name}?_posts=true&_following=true&_followers=true&_comments=true`;

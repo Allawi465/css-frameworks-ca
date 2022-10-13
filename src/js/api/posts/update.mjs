@@ -5,6 +5,13 @@ import { message } from "../profiles/index.mjs";
 const path = "/posts/";
 const method = "PUT";
 
+/**
+ * Update content by id with api PUT method  
+ * @param {update} update content by id
+ * @param {fetchWToken} token from a function
+ * @param {postData} form data to update the content
+*/
+
 export async function updating(postData) {
     try {
         const updatingPostUrl = `${API_SOCIAL_URL}${path}${postData.id}`;

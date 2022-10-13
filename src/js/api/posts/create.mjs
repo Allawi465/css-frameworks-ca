@@ -5,6 +5,13 @@ import { message } from "../profiles/index.mjs";
 const path = "/posts";
 const method = "POST";
 
+/**
+ * create content with api post method 
+ * @param {create} create content api with post method
+ * @param {postData} form data to create content
+ *  @param {fetchWToken} token from a function
+*/
+
 export async function creatingPosts(postData) {
     try {
         const creatingPostUrl = API_SOCIAL_URL + path;

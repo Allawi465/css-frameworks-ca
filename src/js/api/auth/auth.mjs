@@ -1,5 +1,12 @@
 import * as localStorage from "../../localStorage/index.mjs";
 
+/**
+ * Checking Auth from localStorage
+ * @param {loadTheValue} localStorage get value
+ * @param {authValidation} if user true or false Validation
+ * @param {removeFromStorage} localStorage remove value
+*/
+
 export class Auth {
     
     constructor() {

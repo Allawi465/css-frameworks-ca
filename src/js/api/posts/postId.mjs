@@ -9,6 +9,12 @@ const id = parameters.get("id");
 const path = "/posts";
 const getPostUrl = `${API_SOCIAL_URL}${path}/${id}?_author=true&_comments=true&_reactions=true`;
 
+/**
+ * Get content by id with api call 
+ * @param {Get} Get content by id
+ * @param {fetchWToken} token from a function
+*/
+
 export async function postById() {
    try {
         const response = await fetchWToken(getPostUrl)

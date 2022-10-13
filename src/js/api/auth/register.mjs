@@ -3,6 +3,11 @@ const message = document.querySelector(".sign-in-h2");
 const path = "/auth/register";
 const method = "POST";
 
+/**
+ * Register through api with post method  
+ * @param {register} api call with post method
+*/
+
 export async function register(user) {
     const registerApiUrl = API_SOCIAL_URL + path;
     const body = JSON.stringify(user);

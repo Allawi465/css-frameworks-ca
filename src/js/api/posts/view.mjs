@@ -4,6 +4,12 @@ import { message } from "../profiles/index.mjs";
 
 const path = "/posts";
 
+/**
+ * view posts content with api get method  
+ * @param {get} get posts content 
+ * @param {fetchWToken} token from a function
+*/
+
 export async function viewingAll(posts) {
     try {
         const path = "/posts/?_author=true&_comments=true&_reactions=true";
@@ -16,6 +22,12 @@ export async function viewingAll(posts) {
     }
 };
 
+/**
+ * view post content by id with api get method  
+ * @param {id} get post content by id 
+ * @param {fetchWToken} token from a function
+*/
+
 export async function viewingAPost(id) {
     try {
         const getPostUrl = `${API_SOCIAL_URL}${path}/${id}`;
@@ -27,6 +39,11 @@ export async function viewingAPost(id) {
     }
 }; 
 
+/**
+ * view posts content with api get method  
+ * @param {get} get posts content with limit 300 posts
+ * @param {fetchWToken} token from a function
+*/
 
 export async function viewingAllPosts(posts) {
     try {
