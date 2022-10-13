@@ -16,21 +16,26 @@ export default function router() {
             listener.viewProfile();
             listener.deleteAPost();
             listener.editAPost();
+            listener.searchProfiles();
         break;
         case '/profile/posts/':
             listener.authValidation();
             listener.renderNavbarImage();
             listener.creatingAPost();
             listener.viewPosts();
+            listener.searchPosts();
+            listener.searchProfiles();
         break;
         case '/profile/profiles/':
             listener.renderNavbarImage();
             listener.viewProfiles()
+            listener.searchProfiles();
         break;
         case '/profile/posts/post/':
             listener.authValidation();
             listener.renderNavbarImage();
             listener.postId();
+            listener.searchProfiles();
         break;
         default: 
         location.href = "/profile/login/";
