@@ -14,7 +14,8 @@ export function searchProfiles() {
         const filteredProfiles = profiles.filter(
             (profiles) =>
             profiles.name &&
-            profiles.avatar 
+            profiles.avatar && 
+            profiles._count.posts 
         );  
         
         const searchFilterProfiles = filteredProfiles.filter((profile) => 

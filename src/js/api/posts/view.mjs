@@ -6,7 +6,7 @@ const path = "/posts";
 
 export async function viewingAll(posts) {
     try {
-        const path = "/posts/?_author=true&_comments=true&_reactions=true&limit=200";
+        const path = "/posts/?_author=true&_comments=true&_reactions=true";
         const getPostUrl = `${API_SOCIAL_URL}${path}`;
         const response = await fetchWToken(getPostUrl)
     
