@@ -3,7 +3,7 @@ import * as localStorage from "../../localStorage/index.mjs";
 /**
  * Checking Auth from localStorage
  * @param {loadTheValue} localStorage get value
- * @param {authValidation} if user true or false Validation
+ * @param {authValidation} if user true or false validation
  * @param {removeFromStorage} localStorage remove value
 */
 
