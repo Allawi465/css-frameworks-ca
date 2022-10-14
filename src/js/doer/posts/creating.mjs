@@ -1,5 +1,11 @@
 import { creatingPosts } from "../../api/posts/create.mjs";
 
+/**
+ * Creating a post with a form
+ * @param {formData} using new FormData to get all inputs value 
+ * @param {creatingPosts} sending the form to the api cal
+*/
+
 export function creatingAPost() {
     const form = document.querySelector("#createPost");
     if (form) {

@@ -6,6 +6,14 @@ export const container = document.querySelector(".main-container");
 const containerForFollowing = document.querySelector(".live-feed-list");
 export const spinner = document.getElementById("spinner");
 
+/**
+ * render the profile with templates
+ * @param {profile} get the profile by name
+ * @param {renderProfileTemplate} render profile
+ * @param {renderFollowingTemplate} render profile following 
+ * @param {renderPostTemplate} render profile posts  
+*/
+
 export async function viewProfile() {
     const profile = await getProfile();
     spinner.classList.remove("spinner-grow");

@@ -1,5 +1,11 @@
 import { login } from "../api/auth/login.mjs";
 
+/**
+ * form to login
+ * @param {profile} form to login
+ * @param {login} sending the form to api call
+*/
+
 export function loginNewUsers() {
     const form = document.querySelector("#loginForm");
 

@@ -6,6 +6,14 @@ import { viewPosts } from "../index.mjs";
 const search = document.getElementById("search-input");
 const profilesFromSearch = document.getElementById("profilesFromSearch");
 
+/**
+ * showing the profiles by search
+ * @param {searchValue} making all search value toLowerCase
+ * @param {profiles} getting all the profiles
+ * @param {filteredProfiles} filtering the profiles  
+ * @param {searchFilterProfiles} searching the profiles by name
+*/
+
 export function searchProfiles() {
     search.addEventListener("keyup", async (event) => {
         const searchValue = event.target.value.toLowerCase();
@@ -37,6 +45,13 @@ export function searchProfiles() {
     });
 };
 
+/**
+ * showing the posts by search
+ * @param {searchValue} making all search value toLowerCase
+ * @param {posts} getting all the posts
+ * @param {filteredPosts} filtering the posts  
+ * @param {filterPostsSearch} searching the posts by title, body or author name
+*/
 
 export function searchPosts() {
     search.addEventListener("keyup", async (event) => {
