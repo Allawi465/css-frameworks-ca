@@ -1,6 +1,7 @@
 {
   "source": {
-    "include": ["."],
+    "include": ["src"],
+    "includePattern": ".mjs$",
     "exclude": ["node_modules/"]
   }
 }
