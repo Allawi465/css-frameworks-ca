@@ -1,5 +1,10 @@
 import { loadTheValue } from "../localStorage/index.mjs";
 
+/**
+ * making html as return from the function
+ * @param {return} returning html post div 
+*/
+
 export function postsTemplate(posts) {
     const { avatar } = loadTheValue("user");
     return `
@@ -67,11 +72,22 @@ export function postsTemplate(posts) {
     </div>`;
 };
 
+/**
+ * Template to render html posts with forEach
+ * @param {postsTemplate} getting the html return from a function
+ * @param {forEach} render html posts with forEach
+*/
+
 export function renderPostsTemplate(posts, parent) {
     posts.forEach((posts) => {
        parent.innerHTML += postsTemplate(posts);
     });
 };
+
+/**
+ * Template to render html post by id
+ * @param {postsTemplate} getting the html return from a function
+*/
 
 export function PostsIdTemplate(posts, parent) {
     parent.innerHTML += postsTemplate(posts);

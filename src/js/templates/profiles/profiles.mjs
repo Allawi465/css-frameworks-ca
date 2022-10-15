@@ -1,3 +1,8 @@
+/**
+ * making html as return from the function
+ * @param {return} returning html profiles div 
+*/
+
 export function profilesTemplate(profiles) {
     return `<div class="card profil-page-card bg-dark">
                 <div class="card-body">
@@ -27,6 +32,10 @@ export function profilesTemplate(profiles) {
     </div>`;
 };
 
+/**
+ * Template to render html profiles by name 
+ * @param {profilesTemplate} getting the html return from a function
+*/
 
 export function renderProfilesTemplate(profiles, parent) {
     parent.innerHTML += profilesTemplate(profiles);

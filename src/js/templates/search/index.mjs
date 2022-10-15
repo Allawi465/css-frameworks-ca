@@ -1,5 +1,10 @@
 import { loadTheValue } from "../../localStorage/index.mjs"; 
 
+/**
+ * making html as return from the function
+ * @param {return} returning html profiles div 
+*/
+
 export function getAllProfilesHTML(profiles) {
     return `
     <div>
@@ -20,10 +25,19 @@ export function getAllProfilesHTML(profiles) {
     </div>`;
 };
 
+/**
+ * Template to render html profiles by name 
+ * @param {getAllProfilesHTML} getting the html return from a function
+*/
+
 export function searchProfilesTemplate(profiles, parent) {
     parent.innerHTML += getAllProfilesHTML(profiles);
 };
 
+/**
+ * making html as return from the function
+ * @param {return} returning html posts div 
+*/
 
 export function allProfilesPostHTML(posts) {
     const { avatar } = loadTheValue("user");
@@ -91,6 +105,12 @@ export function allProfilesPostHTML(posts) {
             </div>
     </div>`;
 };
+
+/**
+ * Template to render html posts with forEach
+ * @param {allProfilesPostHTML} getting the html return from a function
+ * @param {forEach} render html posts with forEach
+*/
 
 export function renderProfilesPostTemplate(posts, parent) {
     posts.forEach((posts) => {

@@ -1,5 +1,10 @@
 import { loadTheValue } from "../../localStorage/index.mjs";
 
+/**
+ * making html as return from the function
+ * @param {return} returning html posts div 
+*/
+
 export function profilesPosthTML(posts) {
  const { avatar:commentAvatar } = loadTheValue("user");
     return ` <div class="card mb-4"">
@@ -63,6 +68,12 @@ export function profilesPosthTML(posts) {
         </div>
     </div>`;
 };
+
+/**
+ * Template to render html posts with forEach
+ * @param {profilesPosthTML} getting the html return from a function
+ * @param {forEach} render html posts with forEach
+*/
 
 export function profilesPostTemplate(profile, parent) {
     Object.entries(profile.posts).forEach((posts) => {

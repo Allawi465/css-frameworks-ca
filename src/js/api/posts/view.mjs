@@ -41,13 +41,13 @@ export async function viewingAPost(id) {
 
 /**
  * view posts content with api get method  
- * @param {get} get posts content with limit 300 posts
+ * @param {get} get posts content with limit 100 posts ny default
  * @param {fetchWToken} token from a function
 */
 
 export async function viewingAllPosts(posts) {
     try {
-        const path = "/posts/?_author=true&_comments=true&_reactions=true&limit=300";
+        const path = "/posts/?_author=true&_comments=true&_reactions=true";
         const getPostUrl = `${API_SOCIAL_URL}${path}`;
         const response = await fetchWToken(getPostUrl)
     

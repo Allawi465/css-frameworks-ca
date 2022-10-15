@@ -1,3 +1,8 @@
+/**
+ * making html as return from the function
+ * @param {return} returning html profile div 
+*/
+
 export function profileTemplate(profile) {
     return `<div class="card profil-page-card bg-dark">
                 <div class="card-body">
@@ -27,6 +32,11 @@ export function profileTemplate(profile) {
     </div>`;
 };
 
+/**
+ * making html as return from the function
+ * @param {return} returning html profile following div 
+*/
+
 export function getMineFollowing(following) {
    return `
    <div>
@@ -47,11 +57,22 @@ export function getMineFollowing(following) {
    </div>`;
 };
 
+/**
+ * Template to render html profile following with forEach
+ * @param {getMineFollowing} getting the html return from a function
+ * @param {forEach} render html profile following with forEach
+*/
+
 export function renderFollowingTemplate(profile, parent) {
     Object.entries(profile.following).forEach((following) => {
         parent.innerHTML += getMineFollowing(following);
     });
 };
+
+/**
+ * Template to render html profile
+ * @param {profileTemplate} getting the html return from a function
+*/
 
 export function renderProfileTemplate(profile, parent) {
     parent.innerHTML += profileTemplate(profile);
