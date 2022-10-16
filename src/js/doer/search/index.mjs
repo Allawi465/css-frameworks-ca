@@ -3,6 +3,8 @@ import { getAllProfiles } from "../../api/profile/index.mjs";
 import { viewingAllPosts } from "../../api/posts/view.mjs";
 import { containerPostsLists } from "../index.mjs";
 import { viewPosts } from "../index.mjs"; 
+import { message } from "../../api/profiles/index.mjs";
+const messageProfile = document.getElementById("profilesSearchMessage");
 const search = document.getElementById("search-input");
 const profilesFromSearch = document.getElementById("profilesFromSearch");
 
@@ -32,11 +34,15 @@ export function searchProfiles() {
 
         profilesFromSearch.innerHTML = "";
 
-        console.log("filter profiles", searchFilterProfiles);
-
-       
-        templates.searchProfilesTemplate(searchFilterProfiles, profilesFromSearch);
-
+        if (searchFilterProfiles.length === 0) {
+            messageProfile.innerHTML = "No profile found, API Limit is 1000";
+        } else {
+            messageProfile.innerHTML = "";
+        }
+ 
+        if (searchFilterProfiles.length === 1) { 
+            templates.searchProfilesTemplate(searchFilterProfiles, profilesFromSearch);
+        }
 
         if (searchValue === "") {
             profilesFromSearch.innerHTML = "";
@@ -73,9 +79,15 @@ export function searchPosts() {
         );
 
         containerPostsLists.innerHTML = "";
+        
+        
+        if (filterPostsSearch.length === 0) {
+            message.innerHTML = "No posts found, API Limit is 100";
+        } else {
+            message.innerHTML = "";
+        }
 
         templates.renderProfilesPostTemplate(filterPostsSearch, containerPostsLists)
-        console.log("filterPosts", filterPostsSearch);
 
         if (searchValue === "") {
             containerPostsLists.innerHTML = "";
