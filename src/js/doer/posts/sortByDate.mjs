@@ -5,7 +5,11 @@ const sortBtn = document.getElementById("sortDiv");
 const btnOld = document.getElementById("oldPost");
 const btnNew = document.getElementById("newPost");
 
-
+/**
+ * sorting the post by date
+ * @param {addsNewDate} returning all the post with a new date
+ * @param {sort} sorting the array posts by number with new and old number
+*/
 
 export function sortByDate() {
     sortBtn.addEventListener("click", async (e) => {
