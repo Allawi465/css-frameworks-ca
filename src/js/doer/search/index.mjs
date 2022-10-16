@@ -79,7 +79,7 @@ export function searchPosts() {
 
         if (searchValue === "") {
             containerPostsLists.innerHTML = "";
-            viewPosts()
+            viewPosts();
         };
     });
 };

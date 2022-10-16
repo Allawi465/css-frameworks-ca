@@ -32,6 +32,7 @@ export default function router() {
             listener.viewPosts();
             listener.searchPosts();
             listener.searchProfiles();
+            listener.sortByDate();
         break;
         case '/profile/profiles/':
             listener.renderNavbarImage();
@@ -47,4 +48,4 @@ export default function router() {
         default: 
         location.href = "/profile/login/";
     } 
-}
+};
