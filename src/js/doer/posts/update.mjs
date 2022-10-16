@@ -10,7 +10,7 @@ import { viewingAPost, updating } from "../../api/posts/index.mjs";
 
 export function editAPost () {
     containerForPosts.addEventListener("click", async (e) => {
-        const editBtn = e.target.id === "editPost"
+        const editBtn = e.target.id === "editPost";
         let id = e.target.dataset.id;
         const form = document.querySelector("#editForm");
 

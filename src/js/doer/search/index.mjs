@@ -56,7 +56,7 @@ export function searchProfiles() {
 export function searchPosts() {
     search.addEventListener("keyup", async (event) => {
         const searchValue = event.target.value.toLowerCase();
-        const posts = await viewingAllPosts()
+        const posts = await viewingAllPosts();
 
         const filteredPosts = posts.filter(
             (posts) =>

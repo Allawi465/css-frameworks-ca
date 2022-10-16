@@ -17,7 +17,7 @@ const getPostUrl = `${API_SOCIAL_URL}${path}/${id}?_author=true&_comments=true&_
 
 export async function postById() {
    try {
-        const response = await fetchWToken(getPostUrl)
+        const response = await fetchWToken(getPostUrl);
         return await response.json();
     } catch (error) {
         message.innerHTML = `<p>we are aware of the issues with accessing NewDay. our team is actively working on it</p>`;

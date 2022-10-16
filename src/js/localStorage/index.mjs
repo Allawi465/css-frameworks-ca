@@ -5,7 +5,7 @@
 */
 
 export function saveToStorage(key, value) {
-    localStorage.setItem(key, JSON.stringify(value))
+    localStorage.setItem(key, JSON.stringify(value));
 };
 
 /**
@@ -29,5 +29,5 @@ export function loadTheValue(key) {
 */
 
 export function removeFromStorage(key) {
-    localStorage.removeItem(key)
+    localStorage.removeItem(key);
 };

@@ -34,9 +34,9 @@ export async function login(profile) {
         if(data.status !== 201) {
             localStorage.saveToStorage("token", accessToken);
             localStorage.saveToStorage("user", data);
-            location.replace("/profile/mypage")
+            location.replace("/profile/mypage");
         }
     } catch(error) {
-        message.innerHTML = "Invalid email or password  ";
+        message.innerHTML = "Invalid email or password";
     }
 };

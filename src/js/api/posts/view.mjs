@@ -14,7 +14,7 @@ export async function viewingAll(posts) {
     try {
         const path = "/posts/?_author=true&_comments=true&_reactions=true";
         const getPostUrl = `${API_SOCIAL_URL}${path}`;
-        const response = await fetchWToken(getPostUrl)
+        const response = await fetchWToken(getPostUrl);
     
         return await response.json();
     } catch (error) {
@@ -31,7 +31,7 @@ export async function viewingAll(posts) {
 export async function viewingAPost(id) {
     try {
         const getPostUrl = `${API_SOCIAL_URL}${path}/${id}`;
-        const response = await fetchWToken(getPostUrl)
+        const response = await fetchWToken(getPostUrl);
     
         return await response.json();
     } catch (error) {
@@ -49,7 +49,7 @@ export async function viewingAllPosts(posts) {
     try {
         const path = "/posts/?_author=true&_comments=true&_reactions=true";
         const getPostUrl = `${API_SOCIAL_URL}${path}`;
-        const response = await fetchWToken(getPostUrl)
+        const response = await fetchWToken(getPostUrl);
     
         return await response.json();
     } catch (error) {

@@ -16,7 +16,7 @@ export const message = document.getElementById("errorMessage");
 export async function getProfiles(profiles) {
  try {
     const path = `/profiles/${name}?_posts=true&_following=true&_followers=true&_comments=true`;
-    const method = "GET"
+    const method = "GET";
     const getProfileUrl = API_SOCIAL_URL + path;
     const response = await fetchWToken(getProfileUrl, {
         method,
