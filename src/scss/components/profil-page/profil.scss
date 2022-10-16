@@ -22,6 +22,10 @@ strong {
     color: $white;
 }
 
+.addPost {
+    color: $white;
+}
+
 .profil-info-bio {
     color: $white;
     max-width: 600px;
@@ -56,6 +60,8 @@ strong {
   
     .live-feed-list {
       width: 100%;
+      display: flex;
+      flex-direction: row;
     }
   
     .feed-post-profil {

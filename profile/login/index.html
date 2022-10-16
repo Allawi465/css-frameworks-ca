@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Homepage | NewDay</title>
+    <title> Sign in | NewDay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,29 +16,33 @@
 
 <body class="text-center body-for-login">
     <main class="form-signin w-100 m-auto">
-        <form action="/profile">
+        <form id="loginForm">
             <h1 class="display-1 h1-login-page">NewDay</h1>
-            <h2 class="display-6 mb-3 fw-normal sign-in-h2">Please sign in</h2>
+            <h2 class="display-6 mb-3 fw-normal sign-in-h2">Sign in</h2>
 
             <div class="form-floating mb-2">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <input type="email" name="email" class="form-control" id="email" placeholder="name@stud.noroff.no"
+                    required pattern="[\w\-.]+@(stud.)?noroff.no$"
+                    title="The email value must be a valid noroff.no email. Example: name@stud.noroff.no">
                 <label for="floatingInput" class="form-label">Email address</label>
             </div>
             <div class="form-floating mb-2">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password"
+                    required minlength="8">
                 <label for="floatingPassword" class="form-label">Password</label>
             </div>
 
-            <div class="checkbox mb-3">
+            <div class="checkbox mb-3 d-flex justify-content-between">
                 <label>
-                    <input type="checkbox" value="remember-me"> Remember me
+                    <input type="checkbox" value="remember-me">Remember me
                 </label>
+                <a href="/profile/register/" class="sign-up-btn">Sign up</a>
             </div>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
             <p class="mt-3 mb-3 text-muted">&copy; NewDay 2022</p>
         </form>
     </main>
+    <script src="/src/js/index.mjs" type="module"></script>
 </body>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

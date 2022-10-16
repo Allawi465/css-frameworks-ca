@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Profile | NewDay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Roboto:wght@100;300;400&family=Tai+Heritage+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/style.css">
+</head>
+
+<body class="p-0 m-0 border-0">
+
+    <header class="mb-4">
+        <nav class="navbar .navbar-expand-sm bg-light fixed-top">
+            <div class="container">
+                <div class="d-flex flex-row justify-content-between col-12 header-nav-bar">
+                    <a class="navbar-brand" href="/profile/posts/">
+                        <h1 class="display-6 logo-name">NewDay</h1>
+                    </a>
+                    <div class="form-search">
+                        <form class="d-flex" role="search" id="search-input">
+                            <input class="form-control me-2 search-input" type="search" placeholder="Search"
+                                aria-label="Search">
+                        </form>
+                    </div>
+                    <div>
+                        <ul class="list-inline left-bar-nav">
+                            <li class="list-inline-item align-middle">
+                                <div class="dropdown">
+                                    <a href="#"
+                                        class="d-flex align-items-center justify-content-center link-dark text-decoration-none dropdown-toggle profil-nav"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="" alt="" width="28" height="28" class="rounded-circle navbarImages">
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end  dropdown-menu-lg-start dropdown-nav"
+                                        data-bs-display="static">
+                                        <li><a class="dropdown-item active" href="/profile/mypage/">Profile</a></li>
+                                        <li><a class="dropdown-item" href="/profile/posts/">Posts</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item sign_out" href="/profile/login/">Sign out</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="profilesFromSearch" style="margin-top: 100px;">
+
+        </div>
+        <div class="d-flex justify-content-center mb-2" role="alert" id="profilesSearchMessage">
+        
+        </div>
+        <div class="container mb-4 mt-6 main-container">
+
+        </div>
+        <div class="container-fluid">
+            <div class="container d-flex justify-content-center">
+                <div class="col-9 main-content">
+                    <div class="row">
+                        <div class="col-3 mb-3 live-feed-list">
+
+                        </div>
+                        <div class="col-8 feed-post-profil">
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Edit post</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form id="editForm">
+                                                <div class="mb-3">
+                                                    <div>
+                                                        <input class="form-control form-control-sm mb-2" type="text"
+                                                            name="title" placeholder="Your title here..."
+                                                            aria-label=".form-control-sm example" required>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            name="body" rows="2"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary Btn">Update</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center" role="alert" id="errorMessage">
+            <div class="spinner-grow" role="status" id="spinner">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </main>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/src/js/index.mjs" type="module"></script>
+</body>
+
+</html>
